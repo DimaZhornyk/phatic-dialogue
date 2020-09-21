@@ -1,13 +1,3 @@
-regexp_templates = [
-
-]
-
-# qna = [
-#     {"question_word": "why",
-#      "questions": [],
-#      "answers": []}
-# ]
-
 question_words = {
     "who": {},
     "what": {"position": {},
@@ -41,3 +31,14 @@ general_questions = {
     "history": [],
     "opinion": []
 }
+
+simple_answers_mapping = {
+    "do you": ["Yes, I do", "No, I don`t"],
+    "have you": ["Yes, I have", "No, I haven`t"],
+    "may i ask": ["You are welcome"]
+}
+
+already_asked_response = [
+    "Bruuh, you are so boring asking the same stuff again and again",
+
+]
