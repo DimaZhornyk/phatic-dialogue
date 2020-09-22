@@ -3,10 +3,13 @@ import random
 import re
 from fuzzywuzzy import fuzz
 from question_response import generate_answer
-from templates import *
+from statement_related_templates import *
 
 with open('dev.json') as json_file:
     basic_data = json.load(json_file)
+
+with open('simple_questions_answers.json') as json_file:
+    simple_questions = json.load(json_file)
 
 previous_messages = []
 
@@ -19,6 +22,10 @@ def process_user_input(value):
     else:
         previous_messages.append(value)
     # to find the full answer
+    for question in simple_questions.keys():
+        if fuzz.ratio(question, value) > 95:
+            return simple_questions[question]
+
     for category in basic_data["data"]:
         for paragraph in category["paragraphs"]:
             for question in paragraph["qas"]:
@@ -29,10 +36,14 @@ def process_user_input(value):
                     return res[random.randint(0, len(question["answers"]) - 1)]["text"]
     if re.search(r"\?", value) is not None:
         # if its a question
-        return generate_answer(value.split("?")[0].lower())
-    return "K"
+        answer = generate_answer(value.split("?")[0])
+        return answer if answer else default_responses[random.randint(0, len(default_responses) - 1)]
+    else:
+        # work with statement
+        pass
+    return default_responses[random.randint(0, len(default_responses) - 1)]
 
 
 while True:
     val = input("> ")
-    print(process_user_input(val))
+    print(process_user_input(val.lower()))

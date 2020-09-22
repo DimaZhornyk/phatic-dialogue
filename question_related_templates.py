@@ -1,7 +1,7 @@
 question_words = {
     "who": {
         "about_you": {
-            "keywords": ["is your"],
+            "keywords": ["is your", "are you"],
             "answers": [
                 "Private is not public ... So I won't tell"
             ],
@@ -63,7 +63,10 @@ question_words = {
             "Oh, I never even thought about that. And you?",
             "Because, man! That`s obvious. Why are you asking such s simple stuff?",
             ""
-        ]}
+        ]},
+    "how": {
+
+    }
 }
 
 general_questions = {
@@ -140,14 +143,12 @@ general_questions = {
 simple_answers_mapping = {
     "do you": ["Yes, I do", "No, I don`t"],
     "have you": ["Yes, I have", "No, I haven`t"],
-    "may i ask": ["You are welcome"]
+    "aren`t you": ["Yes, I am", "No, I a mnot"],
+    "are you": ["Yes, I am", "No, I am not"]
 }
 
-already_asked_response = [
-    "Bruuh, you are so boring asking the same stuff again and again",
-    "What about smth new...?",
-    "Can you tell me smth new?",
-    "I`ve just hear smth similar for that...",
-    "I don't like that you repeat yourself too often",
-    "I caught flashbacks, but not from Vietnam"
+why_are_you_asking_responses = [
+    "Why are you so interested in that?",
+    "Why does it matter to you at all?"
 ]
+
