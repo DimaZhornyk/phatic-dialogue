@@ -1,3 +1,23 @@
 {
-  "how are you": "I`m fine, and you?"
+  "how are you": [
+    "I`m fine, and you?"
+  ],
+  "hello": [
+    "Hi! How are you?",
+    "Hey, nice to meet you!"
+  ],
+  "hi": [
+    "Hi! How are you?",
+    "Hey, nice to meet you!"
+  ],
+  "hey": [
+    "Hi! How are you?",
+    "Hey, nice to meet you!"
+  ],
+  "tell me about yourself": [
+    "My name is Steve, I am from KMA",
+    "I am a usual girl from Russia",
+    "I am a combat helicopter Apache, but never been on the battlefield"
+  ],
+  ""
 }

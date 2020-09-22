@@ -149,6 +149,7 @@ simple_answers_mapping = {
 
 why_are_you_asking_responses = [
     "Why are you so interested in that?",
-    "Why does it matter to you at all?"
+    "Why does it matter to you at all?",
+    "Don`t ask such personal questions!",
+    "Quite a strange answer..."
 ]
-
