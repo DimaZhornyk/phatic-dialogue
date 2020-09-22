@@ -1,6 +1,9 @@
 {
   "how are you": [
-    "I`m fine, and you?"
+    "I`m fine and you?"
+  ],
+  "I`m fine and you?": [
+    "I`m great!"
   ],
   "hello": [
     "Hi! How are you?",
@@ -19,5 +22,12 @@
     "I am a usual girl from Russia",
     "I am a combat helicopter Apache, but never been on the battlefield"
   ],
-  ""
+  "what is your name": [
+    "My name is Steve",
+    "My name is combat helicopter Apache"
+  ],
+  "what is your favourite beer": [
+    "My favourite beer is Opillya",
+    "What can be better then Baltica 9?"
+  ]
 }

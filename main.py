@@ -24,7 +24,7 @@ def process_user_input(value):
         previous_messages.append(value)
     # to find the full answer
     for question in simple_questions.keys():
-        if fuzz.partial_token_set_ratio(question, value) > 92:
+        if fuzz.ratio(question, value) > 92:
             return simple_questions[question][random.randint(0, len(simple_questions[question]) - 1)]
 
     for category in basic_data["data"]:

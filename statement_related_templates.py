@@ -12,7 +12,12 @@ default_responses = [
     "As I see, you are not very talkative...",
     "Better tell me more about yourself",
     "Looks like our dialogue is deadlocked, maybe we should change the topic?"
-    ""
+    "Ok",
+    "All right",
+    "I don`t care",
+    "Very interesting",
+    "What your mother say on it?",
+    "This is all very cool, but I want to sleep...",
 ]
 
 additional_sentences = [
